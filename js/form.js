@@ -5,12 +5,17 @@
        this.greeting = createElement('h2');
        this.title = createElement('h2');
        this.reset = createButton('Reset');
+
+       this.a = createElement('h2');
+       this.b = createElement('h2');
     }
     hide() {
         this.greeting.hide();
         this.button.hide();
         this.input.hide();
-        this.title.hide();
+        this.input.hide();
+        this.a.hide();
+        this.b.hide();
     }
     display() {
         this.title.html("FRUIT CATCHER");
@@ -30,9 +35,22 @@
         this.reset.style('height', '30px');
         this.reset.style('background', 'lightpink');
 
+        this.a.html("IT'S A DO-OR-DIE SITUATION");
+        this.a.position(150, 550);
+        this.a.style('font-size', '25px');
+        this.a.style('color', 'teal');
+
+        this.b.html("Score 1 to Win");
+        this.b.position(200, 580);
+        this.b.style('font-size', '35px');
+        this.b.style('color', 'teal');
+
         this.button.mousePressed(() => {
             this.input.hide();
             this.button.hide();
+            this.a.hide();
+            this.b.hide();
+
             player.name = this.input.value();
             playerCount += 1;
             player.index = playerCount;
