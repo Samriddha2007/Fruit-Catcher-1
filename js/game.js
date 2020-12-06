@@ -133,7 +133,7 @@ class Game
                     
               
                     
-                if(player1score >= 5 || player2score >= 5)
+                if(player1score >= 1 || player2score >= 1)
                 {
                     gameState = 2;
                 }
@@ -152,11 +152,11 @@ class Game
        fill("blue");
       
 
-       if(player1score >= 5)
+       if(player1score >= 1)
        {
           text("Player 1 Won!!",250,300)
        }
-     else  if(player2score >= 5)
+     else  if(player2score >= 1)
        {
           text("Player 2 Won!!",250,300)
        }
