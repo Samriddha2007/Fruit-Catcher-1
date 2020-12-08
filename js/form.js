@@ -13,7 +13,7 @@
         this.greeting.hide();
         this.button.hide();
         this.input.hide();
-        this.input.hide();
+        this.title.hide();
         this.a.hide();
         this.b.hide();
     }
@@ -47,6 +47,7 @@
 
         this.button.mousePressed(() => {
             this.input.hide();
+            this.title.hide();
             this.button.hide();
             this.a.hide();
             this.b.hide();
